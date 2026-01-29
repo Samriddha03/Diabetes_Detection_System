@@ -57,17 +57,19 @@ diabetes-detection/
 GET /health
 
 Response:
-```json
+```
 {
   "status": "healthy",
   "model_loaded": true,
   "metrics_available": true,
   "version": "1.2"
 }
+```
+
 
 2. Predict Diabetes
 POST /predict
-Request JSON:
+Request:
 ```
 {
   "Pregnancies": 1,
@@ -80,7 +82,7 @@ Request JSON:
   "Age": 29
 }
 ```
-Response JSON:
+Response:
 ```
 {
   "prediction": 0,
@@ -88,6 +90,7 @@ Response JSON:
   "result": "No Diabetes"
 }
 ```
+
 3. Model Metrics
 GET /metrics
 Response:
@@ -99,25 +102,32 @@ Response:
   "f1_score": 0.72
 }
 ```
+
 🔹 Installation & Setup
 1. Clone Repository
+
 ```
 git clone https://github.com/yourusername/diabetes-detection.git
 cd diabetes-detection
 ```
+
 2. Backend Setup
+
 ```
 cd backend
 pip install -r requirements.txt
 ```
+
 3. Run API
 ```
 uvicorn main:app --reload
 
 ```
+
 * Swagger UI: http://127.0.0.1:8000/docs
 
 * ReDoc UI: http://127.0.0.1:8000/redoc
+
 
 4. Frontend Setup
 
@@ -139,4 +149,4 @@ uvicorn main:app --reload
 Samriddha Chakraborty
 Full-stack ML Developer | Python | FastAPI | Machine Learning
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/Samriddha03
