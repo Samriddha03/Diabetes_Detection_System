@@ -107,8 +107,9 @@ Response:
 1. Clone Repository
 
 ```
-git clone https://github.com/yourusername/diabetes-detection.git
-cd diabetes-detection
+git clone https://github.com/Samriddha03/Diabetes_Detection_System.git
+cd Diabetes_Detection_System
+
 ```
 
 2. Backend Setup
