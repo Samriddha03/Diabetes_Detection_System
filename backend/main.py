@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, conint, confloat, validator
 import joblib
 import numpy as np
+import os
 
 # ----------------------
 # Helper function to convert numpy types to Python float
@@ -61,8 +62,10 @@ app.add_middleware(
 # ----------------------
 # Load Model and Metrics
 # ----------------------
-pipeline = joblib.load("diabetes_model.pkl")
-metrics_data = joblib.load("metrics.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+pipeline = joblib.load(os.path.join(BASE_DIR, "diabetes_model.pkl"))
+metrics_data = joblib.load(os.path.join(BASE_DIR, "metrics.pkl"))
 
 # ----------------------
 # Routes
