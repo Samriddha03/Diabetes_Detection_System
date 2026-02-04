@@ -1,8 +1,10 @@
 services:
   - type: web
-    name: diabetes-detection-system
+    name: diabetes-detection-api
     env: python
+    region: singapore
     plan: free
-    runtime: python-3.10.13
-    buildCommand: pip install -r requirements.txt
+    rootDir: backend
+    buildCommand: pip install -r ../requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    pythonVersion: 3.10.13
