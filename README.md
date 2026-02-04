@@ -29,6 +29,18 @@ Diabetes Disease Detection System is a full-stack project that predicts the like
 
 ---
 
+## 🔹 Live Demo
+- **Frontend (GitHub Pages):**  
+  https://samriddha03.github.io/diabetes-detection-ui/
+
+- **Backend API (Render):**  
+  https://diabetes-detection-api-xnu6.onrender.com
+
+- **Swagger API Docs:**  
+  https://.onrender.com/docs
+
+---
+
 ## 🔹 Project Structure
 diabetes-detection/
 │
@@ -48,6 +60,14 @@ diabetes-detection/
 │
 ├── requirements.txt # Python dependencies
 └── README.md
+
+---
+
+> ⚠️ Note:  
+> The frontend is deployed separately using **GitHub Pages** and maintained in a dedicated repository for cleaner deployment and scalability.
+>
+> Frontend Repository:  
+> https://samriddha03.github.io/diabetes-detection-ui/
 
 ---
 
@@ -144,6 +164,18 @@ uvicorn main:app --reload
 * Machine Learning: Scikit-learn (Logistic Regression, Random Forest, Gradient Boosting)
 * Frontend: HTML, CSS, JavaScript
 * Deployment Ready: Docker compatible, CORS enabled
+
+---
+## 🔹 Deployment
+
+- **Backend:** Deployed on Render using FastAPI
+- **Frontend:** Deployed on GitHub Pages
+- **Model Artifacts:** Loaded at runtime using Joblib
+- **CORS:** Enabled for secure frontend-backend communication
+
+The frontend communicates with the deployed FastAPI backend via REST API calls.
+
+---
 
 🔹 Author
 
