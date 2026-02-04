@@ -34,10 +34,8 @@ Diabetes Disease Detection System is a full-stack project that predicts the like
   https://samriddha03.github.io/diabetes-detection-ui/
 
 - **Backend API (Render):**  
-  https://diabetes-detection-api-xnu6.onrender.com
+  https://diabetes-detection-api-xnu6.onrender.com/docs
 
-- **Swagger API Docs:**  
-  https://.onrender.com/docs
 
 ---
 
